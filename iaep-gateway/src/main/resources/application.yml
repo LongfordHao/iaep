@@ -1,0 +1,15 @@
+server:
+  port: 9527
+
+spring:
+
+  cloud:
+    # Spring Cloud Gateway 配置项，全部配置在 Nacos 中
+    # gateway:
+
+    # Nacos 作为注册中心的配置项
+    nacos:
+      discovery:
+        server-addr: 192.168.60.116:80
+        namespace: d6ef760d-0eca-4051-ab51-da2f825c1b8f
+        group: DEFAULT_GROUP

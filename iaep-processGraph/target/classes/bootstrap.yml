@@ -1,0 +1,17 @@
+server:
+  port: 8021
+  servlet:
+    context-path: /iaep-processGraph
+spring:
+  application:
+    name: iaep-processGraph
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.60.116:80
+        namespace: d6ef760d-0eca-4051-ab51-da2f825c1b8f
+      config:
+        server-addr: 192.168.60.116:80
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        namespace: d6ef760d-0eca-4051-ab51-da2f825c1b8f

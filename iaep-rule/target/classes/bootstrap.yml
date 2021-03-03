@@ -1,0 +1,17 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /iaep-rule
+spring:
+  application:
+    name: iaep-rule
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.60.116:80
+        namespace: d6ef760d-0eca-4051-ab51-da2f825c1b8f
+      config:
+        server-addr: 192.168.60.116:80
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        namespace: d6ef760d-0eca-4051-ab51-da2f825c1b8f

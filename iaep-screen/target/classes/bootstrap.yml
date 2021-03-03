@@ -1,0 +1,25 @@
+server:
+  port: 8041
+  servlet:
+    context-path: /iaep-screen
+spring:
+  application:
+    name: iaep-screen
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.60.116:80
+        namespace: d6ef760d-0eca-4051-ab51-da2f825c1b8f
+      config:
+        server-addr: 192.168.60.116:80
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        namespace: d6ef760d-0eca-4051-ab51-da2f825c1b8f
+        #开启eureka负载均衡策略
+ribbon:
+  eureka:
+    enable: true
+    ReadTimeout: 60000
+    ConnectTimeout: 60000

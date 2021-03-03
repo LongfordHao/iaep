@@ -1,0 +1,46 @@
+#server:
+#  prot: 9527
+#
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: rule-route
+#          uri: lb://iaep-rule
+#          predicates:
+#            -Path=/rule/**
+#          filters:
+#            -RewritePath=/(?<segment>.*),/$\{segment}
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.60.116:80
+#      config:
+#        server-addr: 192.168.60.116:80
+#
+## 服务名
+#  application:
+#    name: iaep-gateway
+
+#server:
+#  prot: 9527
+#
+#spring:
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true #使用服务发现路由
+#      routes:
+#server:
+#  port: 9527
+#
+#spring:
+#
+#  cloud:
+#    # Spring Cloud Gateway 配置项，全部配置在 Nacos 中
+#    # gateway:
+#
+#    # Nacos 作为注册中心的配置项
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.60.116:80 # Nacos 服务器地址
